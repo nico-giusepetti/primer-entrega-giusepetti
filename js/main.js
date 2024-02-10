@@ -42,7 +42,7 @@ do {
 
 //FUNCIONES
 // Función para el menú de opciones
-const Menu = () => { 
+function Menu() { 
     opcion = prompt("1. Ver catálogo de productos\n" +
         "2. Comprar productos\n" +
         "3. Salir\n\n" +
@@ -61,7 +61,7 @@ function Catalogo() {
 }
 
 // Función para obtener el nombre del producto de acuerdo al número
-const NombreProducto = (numeroProducto) => {
+function NombreProducto(numeroProducto) {
     switch (numeroProducto) {
         case "1":
             return producto1;
